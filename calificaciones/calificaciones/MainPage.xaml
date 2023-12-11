@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calificaciones.MainPage">
+
+    <ScrollView>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="Bisque">
+            <Label Text="Sistema de Calificación" FontSize="36"
+               HorizontalTextAlignment="Center" Margin="0,0,0,20"
+               TextColor="DarkCyan" FontAttributes="Bold"/>
+
+            <Label Text="Matrícula" FontAttributes="Bold" />
+            <Entry x:Name="MatriculaEntry" Placeholder="Ingrese la matrícula" Keyboard="Text" Margin="0,0,0,10"
+                   TextColor="DarkCyan" FontAttributes="Bold"/>
+
+            <Label Text="Nombre" FontAttributes="Bold" />
+            <Entry x:Name="NombreEntry" Placeholder="Ingrese el nombre" Margin="0,0,0,10" 
+                   TextColor="DarkCyan" FontAttributes="Bold"/>
+
+            <Label Text="Nota de asistencia" FontAttributes="Bold" />
+            <Entry x:Name="AsistenciaEntry" Placeholder="Ingrese la nota de asistencia" Keyboard="Numeric" Margin="0,0,0,10" TextColor="DarkCyan" FontAttributes="Bold"/>
+
+            <Label Text="Nota de Trabajo Práctico" FontAttributes="Bold" />
+            <Entry x:Name="TrabajoPracticoEntry" Placeholder="Ingrese la nota del trabajo práctico" Keyboard="Numeric" Margin="0,0,0,10" TextColor="DarkCyan" FontAttributes="Bold"/>
+
+            <Label Text="Nota del Examen Parcial" FontAttributes="Bold" />
+            <Entry x:Name="ExamenParcialEntry" Placeholder="Ingrese la nota del examen parcial" Keyboard="Numeric" Margin="0,0,0,10" TextColor="DarkCyan" FontAttributes="Bold"/>
+
+            <Label Text="Nota del Examen Final" FontAttributes="Bold" />
+            <Entry x:Name="ExamenFinalEntry" Placeholder="Ingrese la nota del examen final" Keyboard="Numeric" Margin="0,0,0,10" TextColor="DarkCyan" FontAttributes="Bold"/>
+
+            <Button Text="Calcular nota final" BackgroundColor="DarkCyan" Clicked="Button_Clicked" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold"/>
+
+            <Label Text="Nota Final: " FontAttributes="Bold" FontSize="26" HorizontalOptions="Center" Margin="0,20,0,0" TextColor="Black" />
+            <Label x:Name="NotaFinalLabel" FontSize="28" HorizontalOptions="Center" TextColor="Green" FontAttributes="Bold"/>
+
+            <Label Text="Equivalencia en Letra: " FontAttributes="Bold" FontSize="26" HorizontalOptions="Center" Margin="0,20,0,0" TextColor="Black"/>
+            <Label x:Name="EquivalenciaLabel" FontSize="28" HorizontalOptions="Center" TextColor="Green" FontAttributes="Bold"/>
+        </StackLayout>
+
+    </ScrollView>
+
+
+</ContentPage>
